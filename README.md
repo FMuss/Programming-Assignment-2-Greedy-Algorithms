@@ -12,6 +12,19 @@ No compilation required. Requires **Python 3**.
 python3 src/cache_policies.py <input_file>
 ```
 
+**Example input:**
+``bash
+python3 src/cache_policies.py data/example.in
+``
+
+**Example ouput:**
+``
+FIFO  : 60
+LRU   : 60
+OPTFF : 32
+``
+
+
 ## Assumptions
 
 **Input format:**
