@@ -13,17 +13,16 @@ python3 src/cache_policies.py <input_file>
 ```
 
 **Example input:**
-``bash
+```bash
 python3 src/cache_policies.py data/example.in
-``
+```
 
 **Example ouput:**
-``
+```
 FIFO  : 60
 LRU   : 60
 OPTFF : 32
-``
-
+```
 
 ## Assumptions
 
