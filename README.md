@@ -14,7 +14,7 @@ python3 src/cache_policies.py <input_file>
 
 **Example input:**
 ```bash
-python3 src/cache_policies.py data/example.in
+python3 src/cache_policies.py input/examples/cycle.in
 ```
 
 **Example ouput:**
