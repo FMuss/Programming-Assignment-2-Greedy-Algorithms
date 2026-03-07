@@ -21,7 +21,7 @@ python3 src/cache_policies.py input/examples/cycle.in
 ```
 FIFO  : 60
 LRU   : 60
-OPTFF : 32
+OPTFF : 18
 ```
 
 ## Assumptions
