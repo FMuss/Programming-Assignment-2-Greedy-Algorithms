@@ -69,7 +69,7 @@ def optff(k, requests):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: cache_policies.py <input_file>")
+        print("Usage: python3 src/cache_policies.py <input_file>")
         return
 
     try:
