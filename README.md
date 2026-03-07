@@ -32,6 +32,6 @@ LRU   : <number_of_misses>
 OPTFF : <number_of_misses>
 ```
 
-## Report
+## Written Component
 
 Written component answers are provided in `Programming Assignment 2: Greedy Algorithms Report.pdf`
