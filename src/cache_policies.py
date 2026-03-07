@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import os
 from collections import deque, OrderedDict
 
 
@@ -88,9 +89,21 @@ def main():
             print("Cache size k must be a positive integer")
             return
 
-        print(f"FIFO  : {fifo(k, requests)}")
-        print(f"LRU   : {lru(k, requests)}")
-        print(f"OPTFF : {optff(k, requests)}")
+        fifo_misses = fifo(k, requests)
+        lru_misses = lru(k, requests)
+        optff_misses = optff(k, requests)
+
+        os.makedirs("output", exist_ok=True)
+        input_file = os.path.splitext(os.path.basename(sys.argv[1]))[0]
+        output_file = os.path.join("output", input_file + ".out")
+
+        with open(output_file, "w") as f:
+            print(f"FIFO  : {fifo_misses}")
+            f.write(f"FIFO  : {fifo_misses}\n")
+            print(f"LRU   : {lru_misses}")
+            f.write(f"LRU   : {lru_misses}\n")
+            print(f"OPTFF : {optff_misses}")
+            f.write(f"OPTFF : {optff_misses}\n")
 
     except FileNotFoundError:
         print(f"File not found: {sys.argv[1]}")
