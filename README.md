@@ -17,7 +17,7 @@ python3 src/cache_policies.py <input_file>
 python3 src/cache_policies.py input/examples/cycle.in
 ```
 
-**Example ouput:**
+**Example output:**
 ```
 FIFO  : 60
 LRU   : 60
